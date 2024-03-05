@@ -28,13 +28,13 @@ int main(int argc, char **argv) {
             start_time = MPI_Wtime();  // Measure start time for both processes
 
             if (rank == 0) {
-                // Process 0 sends a message to process 1
-                MPI_Send(send_buffer.data(), message_size_bytes, MPI_BYTE, 1, 0, MPI_COMM_WORLD); // sending to processor 1
-                MPI_Recv(recv_buffer.data(), message_size_bytes, MPI_BYTE, 1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); // receiving from processor 1
+                // Processor 0 send/receives to/from Processor 1
+                MPI_Send(send_buffer.data(), message_size_bytes, MPI_BYTE, 1, 0, MPI_COMM_WORLD); // processor 0 sends to processor 1
+                MPI_Recv(recv_buffer.data(), message_size_bytes, MPI_BYTE, 1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); // processor 0 receives from processor 1
             } else {
-                // Process 1 receives a message from process 0
-                MPI_Recv(recv_buffer.data(), message_size_bytes, MPI_BYTE, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); // sending to processor 0
-                MPI_Send(send_buffer.data(), message_size_bytes, MPI_BYTE, 0, 0, MPI_COMM_WORLD); // receiving from processor 0
+                // Processor 1 send/receives to/from Processor 0
+                MPI_Recv(recv_buffer.data(), message_size_bytes, MPI_BYTE, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); // processor 1 sends to processor 0
+                MPI_Send(send_buffer.data(), message_size_bytes, MPI_BYTE, 0, 0, MPI_COMM_WORLD); // processor 1 receives from processor 0
             }
 
             end_time = MPI_Wtime();  // Measure end time for both processes

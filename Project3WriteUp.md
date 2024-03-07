@@ -13,22 +13,22 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 3. Record the total amount of data sent and received during the ping-pong exchange for each configuration.
 
-<span style="color:red;"> we need a table here </span>
+<p style="color:red;"> we need a table here </p>
 
 
 4. Repeat steps 2 and 3 but ensure that the 2 processes that are communicating reside on different physical hardware nodes on HPCC.
 
-<span style="color:red;"> we need a table here </span>
+<p style="color:red;"> we need a table here </p>
 
 
 5. Plot the average communication time of a single exchange (send and receive) as a function of message size for the two cases. Using this plot, estimate the _latency_ and _bandwidth_ for each case. Are they different? Explain your results.
 
-<span style="color:red;"> we need a plot here </span>
+<p style="color:red;"> we need a plot here </p>
 
 
 6. Analyze and discuss your results. Explain the behavior of the resulting curves.
 
-<span style="color:red;"> we need a written explanation here </span>
+<p style="color:red;"> we need a written explanation here </p>
 
 
 
@@ -36,9 +36,9 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 Repeat Part 1 using non-blocking MPI communication, i.e., using `MPI_Isend()` and `MPI_Irecv()`. You will need to include explicit process synchronization using, e.g., `MPI_Wait()` calls. Compare the results to the blocking case.
 
-<span style="color:red;"> we need a table here </span>
-<span style="color:red;"> we need a plot here </span>
-<span style="color:red;"> we need a written explanation here </span>
+<p style="color:red;"> we need a table here </p>
+<p style="color:red;"> we need a plot here </p>
+<p style="color:red;"> we need a written explanation here </p>
 
 
 ## Part 3: MPI Ring Shift
@@ -49,26 +49,26 @@ Repeat Part 1 using non-blocking MPI communication, i.e., using `MPI_Isend()` an
 
 2. As in Parts 1 and 2, vary the message size from 2 bytes to 4 kb, in powers of 2. Also vary the number of processes used from 2 to `N`, in powers of 2, where `N` is sufficiently large that rank 0 and rank `N-1` are guaranteed to reside on separate nodes (`N` will depend on which cluster you are using on HPCC).
 
-<span style="color:red;"> we need a table here </span>
+<p style="color:red;"> we need a table here </p>
 
 
 3. Compute the bandwidth and latency, as above. Plot the bandwidth as a function of message size. Include separate lines for each number of processes used. 
 
-<span style="color:red;"> we need a plot here </span>
+<p style="color:red;"> we need a plot here </p>
 
 
 4. Analyze and discuss your results. Explain the behavior of the resulting curves.
 
-<span style="color:red;"> we need a written explanation here </span>
+<p style="color:red;"> we need a written explanation here </p>
 
 
 ## Part 4: Non-blocking MPI Ring Shift
 
 Repeat Part 3 but using non-blocking communication via `MPI_Isendrecv()`. Compare the results to the blocking case.
 
-<span style="color:red;"> *we need a table here* </span>
-<span style="color:red;"> we need a plot here </span>
-<span style="color:red;"> we need a written explanation here </span>
+<p style="color:red;"> we need a table here </p>
+<p style="color:red;"> we need a plot here </p>
+<p style="color:red;"> we need a written explanation here </p>
 
 
 

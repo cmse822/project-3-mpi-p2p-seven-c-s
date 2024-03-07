@@ -1,4 +1,4 @@
-<h1 style="text-align: center;"> Group 7 Project 3 Write-up</h1> 
+# Group 7 Project 3 Write-up
 
 ## Part 1: Blocking Ping-Pong
 

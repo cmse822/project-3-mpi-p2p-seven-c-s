@@ -1,0 +1,45 @@
+Lmod Warning: Input module (gcc) not found, using module: GCC . . . (ICER v.) 
+
+
+Lmod Warning: Input module (openmpi) not found, using module: OpenMPI . . .
+(ICER v.) 
+
+
+Lmod Warning: Input module (hdf5) not found, using module: HDF5 . . . (ICER
+v.) 
+
+
+Lmod Warning: Input module (python) not found, using module: Python . . .
+(ICER v.) 
+
+
+JobId=31910948 JobName=pingpong
+   UserId=freem386(6187794) GroupId=pa(2003) MCS_label=N/A
+   Priority=60207 Nice=0 Account=general QOS=freem386
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:14 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2024-02-29T18:57:38 EligibleTime=2024-02-29T18:57:38
+   AccrueTime=2024-02-29T18:57:38
+   StartTime=2024-02-29T18:57:41 EndTime=2024-02-29T19:07:41 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-02-29T18:57:41 Scheduler=Main
+   Partition=general-short AllocNode:Sid=dev-intel18:39855
+   ReqNodeList=lac-[224-225,228-248,278-285,294-301] ExcNodeList=(null)
+   NodeList=lac-[294-295]
+   BatchHost=lac-294
+   NumNodes=2 NumCPUs=2 NumTasks=2 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=2,mem=4G,node=2,billing=622
+   AllocTRES=cpu=2,mem=4G,node=2,billing=622
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=2G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/freem_slurm.sb
+   WorkDir=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work
+   Comment=stdout=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-31910948.out 
+   StdErr=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-31910948.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-31910948.out
+   Power=
+   
+

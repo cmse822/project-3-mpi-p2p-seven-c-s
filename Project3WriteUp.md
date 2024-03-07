@@ -15,7 +15,8 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 3. Record the total amount of data sent and received during the ping-pong exchange for each configuration.
 
-<p style="color:red;"> we need a table here </p>
+![image](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/143351616/3a85600c-8c7e-481b-b864-52f8f4cf014e)
+
 
 
 4. Repeat steps 2 and 3 but ensure that the 2 processes that are communicating reside on different physical hardware nodes on HPCC.

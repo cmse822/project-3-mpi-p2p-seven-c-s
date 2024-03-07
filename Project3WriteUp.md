@@ -1,4 +1,4 @@
-<h1 style="text-align: center;"> Group 7 Project 3</h1> 
+<h1 style="text-align: center;"> Group 7 Project 3 Write-up</h1> 
 
 ## Part 1: Blocking Ping-Pong
 
@@ -6,9 +6,6 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 1. Implement the ping-pong problem using MPI in C or C++. Use blocking `MPI_Send()` and `MPI_Recv()` calls. You should define the number of iterations and the size of the message to be exchanged.
 
-<p1>
-test text
-</p1>
 
 
 2. Measure the time taken to complete the ping-pong exchange for different message sizes. You should use the `MPI_Wtime()` function to obtain the time before and after the exchange and calculate the elapsed time. Vary the message size from 2 bytes to 4 kilobytes in powers of 2 (i.e., 2 bytes, 4 bytes, 8 bytes,..., 2048 bytes, 4096 bytes). For each message size, perform 100 iterations of the ping-pong to build up statistical significance.

@@ -1,0 +1,57 @@
+Lmod Warning: Input module (gcc) not found, using module: GCC . . . (ICER v.) 
+
+
+Lmod Warning: Input module (openmpi) not found, using module: OpenMPI . . .
+(ICER v.) 
+
+
+Lmod Warning: Input module (hdf5) not found, using module: HDF5 . . . (ICER
+v.) 
+
+
+Lmod Warning: Input module (python) not found, using module: Python . . .
+(ICER v.) 
+
+
+Message size (bytes): 2, Average elapsed time: 0.00016257 seconds, Total data sent and received: 800 bytes
+Message size (bytes): 4, Average elapsed time: 3.0525e-05 seconds, Total data sent and received: 1600 bytes
+Message size (bytes): 8, Average elapsed time: 3.09074e-05 seconds, Total data sent and received: 3200 bytes
+Message size (bytes): 16, Average elapsed time: 3.03742e-05 seconds, Total data sent and received: 6400 bytes
+Message size (bytes): 32, Average elapsed time: 3.05088e-05 seconds, Total data sent and received: 12800 bytes
+Message size (bytes): 64, Average elapsed time: 3.10326e-05 seconds, Total data sent and received: 25600 bytes
+Message size (bytes): 128, Average elapsed time: 3.36593e-05 seconds, Total data sent and received: 51200 bytes
+Message size (bytes): 256, Average elapsed time: 3.47238e-05 seconds, Total data sent and received: 102400 bytes
+Message size (bytes): 512, Average elapsed time: 3.54301e-05 seconds, Total data sent and received: 204800 bytes
+Message size (bytes): 1024, Average elapsed time: 3.61081e-05 seconds, Total data sent and received: 409600 bytes
+Message size (bytes): 2048, Average elapsed time: 3.84433e-05 seconds, Total data sent and received: 819200 bytes
+Message size (bytes): 4096, Average elapsed time: 4.50775e-05 seconds, Total data sent and received: 1.6384e+06 bytes
+JobId=32179529 JobName=pingpong
+   UserId=brandlan(1051360) GroupId=besfem(2868) MCS_label=N/A
+   Priority=60269 Nice=0 Account=general QOS=brandlan
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:02 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2024-03-07T14:44:29 EligibleTime=2024-03-07T14:44:29
+   AccrueTime=2024-03-07T14:44:29
+   StartTime=2024-03-07T14:44:30 EndTime=2024-03-07T14:54:30 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-03-07T14:44:30 Scheduler=Main
+   Partition=general-long AllocNode:Sid=dev-amd20:73722
+   ReqNodeList=lac-[224-225,228-248,278-285,294-301] ExcNodeList=(null)
+   NodeList=lac-[234-235]
+   BatchHost=lac-234
+   NumNodes=2 NumCPUs=2 NumTasks=2 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=2,mem=4G,node=2,billing=622
+   AllocTRES=cpu=2,mem=4G,node=2,billing=622
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=2G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-252/brandlan/CMSE822/project-3-mpi-p2p-seven-c-s/Anna_Work/Ping_Pong_Slurm.sb
+   WorkDir=/mnt/ufs18/home-252/brandlan/CMSE822/project-3-mpi-p2p-seven-c-s/Anna_Work
+   Comment=stdout=/mnt/ufs18/home-252/brandlan/CMSE822/project-3-mpi-p2p-seven-c-s/Anna_Work/slurm-32179529.out 
+   StdErr=/mnt/ufs18/home-252/brandlan/CMSE822/project-3-mpi-p2p-seven-c-s/Anna_Work/slurm-32179529.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-252/brandlan/CMSE822/project-3-mpi-p2p-seven-c-s/Anna_Work/slurm-32179529.out
+   Power=
+   
+

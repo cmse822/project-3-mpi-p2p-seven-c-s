@@ -21,7 +21,9 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 4. Repeat steps 2 and 3 but ensure that the 2 processes that are communicating reside on different physical hardware nodes on HPCC.
 
-<p style="color:red;"> we need a table here </p>
+![Picture2](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/143351616/730b8ca6-fb17-4e2e-a192-0ec487da3625)
+
+![image](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/143351616/2cf5afb8-bfcf-4586-ac2e-e0239855bc3b)
 
 
 5. Plot the average communication time of a single exchange (send and receive) as a function of message size for the two cases. Using this plot, estimate the _latency_ and _bandwidth_ for each case. Are they different? Explain your results.

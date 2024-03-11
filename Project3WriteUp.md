@@ -14,16 +14,18 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 
 3. Record the total amount of data sent and received during the ping-pong exchange for each configuration.
-The data sent and received (bytes) was calculated as such - for 2 byte size, there were 100 iterations, so 2 * 100 * 4 = 800.
-4 comes from the following steps:
 
-Processor 0 sends to Processor 1 (1)
+*The data sent and received (bytes) was calculated as such - for 2 byte size, there were 100 iterations, so 2 * 100 * 4 = 800.*
 
-Processor 1 receives from Processor 0 (2)
+*4 comes from the following steps:*
 
-Processor 1 sends to Processor 0 (3)
+*Processor 0 sends to Processor 1 (1)*
 
-Processor 0 receives from Processor 1 (4)
+*Processor 1 receives from Processor 0 (2)*
+
+*Processor 1 sends to Processor 0 (3)*
+
+*Processor 0 receives from Processor 1 (4)*
 
 | Byte Size | Time (seconds) | Data Sent and Received (bytes) |
 | --------- | -------------- | ------------------------------ |
@@ -64,12 +66,18 @@ Processor 0 receives from Processor 1 (4)
 
 5. Plot the average communication time of a single exchange (send and receive) as a function of message size for the two cases. Using this plot, estimate the _latency_ and _bandwidth_ for each case. Are they different? Explain your results.
 
-<p style="color:red;"> we need a plot here </p>
+<img width="1160" alt="Screenshot 2024-03-11 at 3 32 19 PM" src="https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/143351616/fe3ada39-6c56-466b-bb27-d9addc761f5c">
+
+*Note the following equation:*
+
+*$T(n) = \alpha + \beta n$ where $n$ is the number of bytes, $\alpha$ is the latency (measured in seconds), and $\beta ^{-1}$ is the bandwidth (measured in bytes/seconds).* 
+
+*The latency for ping-pong on the same nodes is 1E-06 seconds and the bandwidth for ping-pong on the same nodes is around 1.11 GB/s. The latency for ping-pong on different nodes is 5E-05 seconds and the bandwidth for ping-pong on different nodes is around 0.5 GB/s.* 
 
 
 6. Analyze and discuss your results. Explain the behavior of the resulting curves.
 
-<p style="color:red;"> we need a written explanation here </p>
+*When going to different nodes, the time is much slower, and the bandwidth is smaller. Hence, the network is better inside the same node. The trend of the lines are similar in the sense that there is a drop between the first byte size and the remaining byte sizes. It is interesting to see that right now, the linear line for the graph of the different nodes has a downward trending slope, but this should change if more byte sizes were tested because the time would increase.* 
 
 
 

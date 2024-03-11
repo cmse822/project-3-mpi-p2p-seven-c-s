@@ -91,11 +91,11 @@ int main(int argc, char* argv[]) {
 
             // Start clock
             starttime_1 = MPI_Wtime();
-            
+
             // Send data from processor 0 to processor 1
             // Note here we use data.front() as the memory location of the first vector entry
             MPI_Isend(&data.front(), N_data, MPI_FLOAT, 1, 0, MPI_COMM_WORLD, &req[0]);
-            
+
             // Receive data back from processor 1
             MPI_Irecv(&data.front(), N_data, MPI_FLOAT, 1, 0, MPI_COMM_WORLD, &req[1]);
             MPI_Waitall(2, req, MPI_STATUS_IGNORE);

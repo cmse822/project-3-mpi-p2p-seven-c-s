@@ -26,10 +26,9 @@ void ring_shift(MPI_Comm comm, int bytes) {
     // Start timing
     start_time = MPI_Wtime();
 
-    // Perform ring shift
-    MPI_Sendrecv(&data.front(), N_data, MPI_FLOAT, (rank + 1) % size, 0,
+    MPI_Isendrecv(&data.front(), N_data, MPI_FLOAT, (rank + 1) % size, 0,
                     &data.front(), N_data, MPI_FLOAT, (rank + size - 1) % size, 0,
-                    comm, MPI_STATUS_IGNORE);
+                    comm);
 
     // End timing
     end_time = MPI_Wtime();

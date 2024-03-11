@@ -15,7 +15,20 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 3. Record the total amount of data sent and received during the ping-pong exchange for each configuration.
 
-![image](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/143351616/3a85600c-8c7e-481b-b864-52f8f4cf014e)
+| Byte Size | Time (seconds) | Data Sent and Received (bytes) |
+| --------- | -------------- | ------------------------------ |
+| 2         | 1.88E-06       | 800                            |
+| 4         | 8.21E-07       | 16000                          |
+| 8         | 8.14E-07       | 32000                          |
+| 16        | 9.12E-07       | 64000                          |
+| 32        | 9.27E-07       | 128000                         |
+| 64        | 1.01E-06       | 256000                         |
+| 128       | 9.80E-07       | 512000                         |
+| 256       | 1.01E-06       | 1024000                        |
+| 512       | 1.24E-06       | 2048000                        |
+| 1024      | 2.16E-06       | 4096000                        |
+| 2048      | 2.65E-06       | 8192000                        |
+| 4096      | 4.79E-06       | 16384000                       |
 
 
 
@@ -23,7 +36,20 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 ![Picture2](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/143351616/730b8ca6-fb17-4e2e-a192-0ec487da3625)
 
-![image](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/143351616/2cf5afb8-bfcf-4586-ac2e-e0239855bc3b)
+| Byte Size | Time (seconds) | Data Sent and Received (bytes) |
+| --------- | -------------- | ------------------------------ |
+| 2         | 0.00016257     | 800                            |
+| 4         | 3.05E-05       | 16000                          |
+| 8         | 3.09E-05       | 32000                          |
+| 16        | 3.04E-05       | 64000                          |
+| 32        | 3.05E-05       | 128000                         |
+| 64        | 3.10E-05       | 256000                         |
+| 128       | 3.37E-05       | 512000                         |
+| 256       | 3.47E-05       | 1024000                        |
+| 512       | 3.54E-05       | 2048000                        |
+| 1024      | 3.61E-05       | 4096000                        |
+| 2048      | 3.84E-05       | 8192000                        |
+| 4096      | 4.51E-05       | 16384000                       |
 
 
 5. Plot the average communication time of a single exchange (send and receive) as a function of message size for the two cases. Using this plot, estimate the _latency_ and _bandwidth_ for each case. Are they different? Explain your results.

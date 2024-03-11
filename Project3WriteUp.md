@@ -70,7 +70,7 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 *Note the following equation:*
 
-*$T(n) = \alpha + \beta n$ where $n$ is the number of bytes, $\alpha$ is the latency (measured in seconds), and $\beta ^{-1}$ is the bandwidth (measured in bytes/seconds).* 
+$T(n) = \alpha + \beta n$ where $n$ is the number of bytes, $\alpha$ is the latency (measured in seconds), and $\beta ^{-1}$ is the bandwidth (measured in bytes/seconds). 
 
 *The latency for ping-pong on the same nodes is 1E-06 seconds and the bandwidth for ping-pong on the same nodes is around 1.11 GB/s. The latency for ping-pong on different nodes is 5E-05 seconds and the bandwidth for ping-pong on different nodes is around 0.5 GB/s.* 
 

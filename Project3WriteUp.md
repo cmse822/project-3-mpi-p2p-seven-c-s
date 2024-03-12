@@ -15,18 +15,6 @@ Your task is to implement the ping-pong problem using MPI in C or C++ and analyz
 
 3. Record the total amount of data sent and received during the ping-pong exchange for each configuration.
 
-*The data sent and received (bytes) was calculated as such - for 2 byte size, there were 100 iterations, so 2 * 100 * 4 = 800.*
-
-*4 comes from the following steps:*
-
-*Processor 0 sends to Processor 1 (1)*
-
-*Processor 1 receives from Processor 0 (2)*
-
-*Processor 1 sends to Processor 0 (3)*
-
-*Processor 0 receives from Processor 1 (4)*
-
 | Byte Size | Time (seconds) | Data Sent and Received (bytes) |
 | --------- | -------------- | ------------------------------ |
 | 2         | 1.88E-06       | 400                            |

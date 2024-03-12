@@ -1,0 +1,45 @@
+Lmod Warning: Input module (gcc) not found, using module: GCC . . . (ICER v.) 
+
+
+Lmod Warning: Input module (openmpi) not found, using module: OpenMPI . . .
+(ICER v.) 
+
+
+Lmod Warning: Input module (hdf5) not found, using module: HDF5 . . . (ICER
+v.) 
+
+
+Lmod Warning: Input module (python) not found, using module: Python . . .
+(ICER v.) 
+
+
+JobId=32446134 JobName=pingpong
+   UserId=freem386(6187794) GroupId=pa(2003) MCS_label=N/A
+   Priority=60281 Nice=0 Account=general QOS=freem386
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:36 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2024-03-12T10:49:08 EligibleTime=2024-03-12T10:49:08
+   AccrueTime=2024-03-12T10:49:08
+   StartTime=2024-03-12T10:49:11 EndTime=2024-03-12T10:59:11 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-03-12T10:49:11 Scheduler=Main
+   Partition=general-short AllocNode:Sid=dev-intel18:20494
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=lac-[361,421]
+   BatchHost=lac-361
+   NumNodes=2 NumCPUs=2 NumTasks=2 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=2,mem=4G,node=2,billing=622
+   AllocTRES=cpu=2,mem=4G,node=2,billing=622
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=2G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/freem_slurm.sb
+   WorkDir=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work
+   Comment=stdout=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32446134.out 
+   StdErr=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32446134.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32446134.out
+   Power=
+   
+

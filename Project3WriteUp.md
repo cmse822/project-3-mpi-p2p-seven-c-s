@@ -65,7 +65,7 @@ $T(n) = \alpha + \beta n$ where $n$ is the number of bytes, $\alpha$ is the late
 
 6. Analyze and discuss your results. Explain the behavior of the resulting curves.
 
-*When going to different nodes, the time is much slower, and the bandwidth is smaller. Hence, the network is better inside the same node. The trend of the lines are similar in the sense that there is a drop between the first byte size and the remaining byte sizes. It is interesting to see that right now, the linear line for the graph of the different nodes has a downward trending slope, but this should change if more byte sizes were tested because the time would increase.* 
+*When going to different nodes, the time is much slower, and the bandwidth is smaller. Hence, the network is better inside the same node. The trend of the lines are similar in the sense that there is a drop between the first byte size and the remaining byte sizes. This may be due to a startup cost at the beginning of running this code. It is interesting to see that right now, the linear line for the graph of the different nodes has a downward trending slope, but this should change if more byte sizes were tested because the time would increase.* 
 
 
 

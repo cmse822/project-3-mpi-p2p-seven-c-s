@@ -102,7 +102,8 @@ Repeat Part 1 using non-blocking MPI communication, i.e., using `MPI_Isend()` an
 ## Part 4: Non-blocking MPI Ring Shift
 
 Repeat Part 3 but using non-blocking communication via `MPI_Isendrecv()`. Compare the results to the blocking case.
-![bandwidth vs  bytea](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/85922017/f8ea3eeb-7f94-4408-812d-aabcf13311ae)
+![bandwidth vs  bytes](https://github.com/cmse822/project-3-mpi-p2p-seven-c-s/assets/85922017/5d7c35cb-6747-41b7-a9ed-dfb12628a342)
+
 
 <p style="color:red;"> we need a table here </p>
 <p style="color:red;"> we need a plot here </p>

@@ -89,7 +89,11 @@ Repeat Part 1 using non-blocking MPI communication, i.e., using `MPI_Isend()` an
 
 <img src="Part2_NB.png">
 
-*Compared to the nonblocking code, the blocking code has a very similar shape. There is a large decrease from the first size of bytes to the second, but the timing near the end of the non-blocking code is shorter than the initial start-up unlike the blocking code. The non-blocking code is also about a magnitude slower than the blocking code. This could be due to the way we coded our manual wait MPI calls. The other noticeable thing is that unlike the blocking code, the non-blocking code returns times that are all the same magnitude of e-5. This could be due to a limitation of our code not allowing any of the processes to run faster than this magnitude of time even if the actual calculation takes less than this time.*
+<img src="Part2_NB_sep_nodes.png">
+
+*Compared to the nonblocking code, the blocking code has a very similar shape. There is a large decrease from the first size of bytes to the second, but the timing near the end of the non-blocking code is shorter than the initial start-up unlike the blocking code. The non-blocking code is also about a magnitude slower than the blocking code. This could be due to the way we coded our manual wait MPI calls. The other noticeable thing is that unlike the blocking code, the non-blocking code returns times that are all the same magnitude of e-5. This could be due to a limitation of our code not allowing any of the processes to run faster than this magnitude of time even if the actual calculation takes less than this time.
+
+There is an odd outlier at 32 bytes in the data run where we tested non-block code on separate nodes. We presume that this is due to some outside latency from the HPCC network being used at the same time. It would have impacted it due do having to communicate between possibly far apart nodes.*
 
 
 ## Part 3: MPI Ring Shift

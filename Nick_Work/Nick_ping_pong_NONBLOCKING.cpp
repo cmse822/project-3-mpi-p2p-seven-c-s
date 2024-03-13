@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
 
     outputFile << "# iteration, total time taken" << std::endl;
 
-    for(int i=1; i<=100; i++) {
+    for(int i=1; i<=1000; i++) {
         // Start universal clock
         starttime_tot = MPI_Wtime();
 

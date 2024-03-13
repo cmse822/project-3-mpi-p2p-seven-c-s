@@ -73,9 +73,23 @@ $T(n) = \alpha + \beta n$ where $n$ is the number of bytes, $\alpha$ is the late
 
 Repeat Part 1 using non-blocking MPI communication, i.e., using `MPI_Isend()` and `MPI_Irecv()`. You will need to include explicit process synchronization using, e.g., `MPI_Wait()` calls. Compare the results to the blocking case.
 
-<p style="color:red;"> we need a table here </p>
-<p style="color:red;"> we need a plot here </p>
-<p style="color:red;"> we need a written explanation here </p>
+| Byte Size | Time (seconds) | Data Sent and Received (bytes) |
+| --------- | -------------- | ------------------------------ |
+| 4         | 2.2E-05       | 8000                           |
+| 8         | 3.9E-05       | 16000                          |
+| 16        | 2.4E-05       | 32000                          |
+| 32        | 1.14E-04      | 64000                          |
+| 64        | 2.0E-05       | 128000                         |
+| 128       | 2.27E-05      | 256000                         |
+| 256       | 2.7E-05       | 512000                         |
+| 512       | 2.6E-05       | 1024000                        |
+| 1024      | 3.1E-05       | 2048000                        |
+| 2048      | 4.2E-05       | 4096000                        |
+| 4096      | 5.5E-05       | 81920000                       |
+
+<img src="Part2_NB.png">
+
+*Outside of an outlier for the 32 byte message size, the non-blocking follows a similar pattern to the blocking code. generally, it is running slower than the blocking code by an order of magnitude. This could be due to the way that we explicity coded the wait MPI calls. The 32 byte outlier is not present in the blocking code, so it may be due to some outside interference when the test run was done.*
 
 
 ## Part 3: MPI Ring Shift

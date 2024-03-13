@@ -1,7 +1,6 @@
 # Ping pong run at Wed Mar 13 11:48:24 2024
 # Data Size 4
-# iteration, total time taken
-ac-244
+# iteration, total time takenac-244
 # Processor 1 with MPI name: lac-245
 # iteration, total time taken
 1,  0.00606481

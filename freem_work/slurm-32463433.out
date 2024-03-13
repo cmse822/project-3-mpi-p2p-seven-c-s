@@ -1,0 +1,56 @@
+Lmod Warning: Input module (gcc) not found, using module: GCC . . . (ICER v.) 
+
+
+Lmod Warning: Input module (openmpi) not found, using module: OpenMPI . . .
+(ICER v.) 
+
+
+Lmod Warning: Input module (hdf5) not found, using module: HDF5 . . . (ICER
+v.) 
+
+
+Lmod Warning: Input module (python) not found, using module: Python . . .
+(ICER v.) 
+
+
+data size:     4 bytes | Latency: 10876.254179 µs | Bandwidth: 0.000351 Mbps
+data size:     8 bytes | Latency: 38.478523 µs | Bandwidth: 0.198277 Mbps
+data size:    16 bytes | Latency: 112.598762 µs | Bandwidth: 0.135515 Mbps
+data size:    32 bytes | Latency: 80.618076 µs | Bandwidth: 0.378545 Mbps
+data size:    64 bytes | Latency: 98.123215 µs | Bandwidth: 0.622026 Mbps
+data size:   128 bytes | Latency: 63.288026 µs | Bandwidth: 1.928806 Mbps
+data size:   256 bytes | Latency: 81.743114 µs | Bandwidth: 2.986681 Mbps
+data size:   512 bytes | Latency: 71.498565 µs | Bandwidth: 6.829245 Mbps
+data size:  1024 bytes | Latency: 64.363703 µs | Bandwidth: 15.172565 Mbps
+data size:  2048 bytes | Latency: 120.276585 µs | Bandwidth: 16.238614 Mbps
+data size:  4096 bytes | Latency: 81.800856 µs | Bandwidth: 47.753168 Mbps
+JobId=32463433 JobName=pingpong
+   UserId=freem386(6187794) GroupId=pa(2003) MCS_label=N/A
+   Priority=60267 Nice=0 Account=general QOS=freem386
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:08 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2024-03-12T16:37:22 EligibleTime=2024-03-12T16:37:22
+   AccrueTime=2024-03-12T16:37:22
+   StartTime=2024-03-12T16:37:27 EndTime=2024-03-12T16:47:27 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-03-12T16:37:27 Scheduler=Main
+   Partition=general-short AllocNode:Sid=dev-intel18:23172
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=lac-[350-351]
+   BatchHost=lac-350
+   NumNodes=2 NumCPUs=2 NumTasks=2 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=2,mem=4G,node=2,billing=622
+   AllocTRES=cpu=2,mem=4G,node=2,billing=622
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=2G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/freem_slurm.sb
+   WorkDir=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work
+   Comment=stdout=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32463433.out 
+   StdErr=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32463433.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32463433.out
+   Power=
+   
+

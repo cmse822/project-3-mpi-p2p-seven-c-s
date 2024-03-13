@@ -303,9 +303,7 @@ Repeat Part 3 but using non-blocking communication via `MPI_Isendrecv()`. Compar
 | 4096  | 62.001869  | 63.002133  |
 
 
-<p style="color:red;"> we need a table here </p>
-<p style="color:red;"> we need a plot here </p>
-<p style="color:red;"> we need a written explanation here </p>
+<p style="color:red;"> Similar to the blocking case, non-blocking case gives wavelike rise in bandwidth and drop in latency as message size increases, the 4 bytes message size gives least efficient performance in both cases using different number of processes. Based on our observation in what's different in non-blocking is that there seems to be a drop of efficiency as the number of process increases. This is particularly obvious in large message size part (2048 bytes and 4096 bytes). Intuitively, we would think that the more the number of process, the less efficient the operation will be. This was not the major factor in blocking case, but became the major factor in non-blocking case. This may because the blocking ring shift forces the processes to wait and causes a lot wasted time so that it becomes the dominant impact on the performance. </p>
 
 
 

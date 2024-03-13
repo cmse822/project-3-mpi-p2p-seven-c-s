@@ -75,21 +75,21 @@ Repeat Part 1 using non-blocking MPI communication, i.e., using `MPI_Isend()` an
 
 | Byte Size | Time (seconds) | Data Sent and Received (bytes) |
 | --------- | -------------- | ------------------------------ |
-| 4         | 2.2E-05       | 8000                           |
-| 8         | 3.9E-05       | 16000                          |
-| 16        | 2.4E-05       | 32000                          |
-| 32        | 1.14E-04      | 64000                          |
-| 64        | 2.0E-05       | 128000                         |
-| 128       | 2.27E-05      | 256000                         |
-| 256       | 2.7E-05       | 512000                         |
-| 512       | 2.6E-05       | 1024000                        |
-| 1024      | 3.1E-05       | 2048000                        |
-| 2048      | 4.2E-05       | 4096000                        |
-| 4096      | 5.5E-05       | 81920000                       |
+| 4         | 8.2E-05       | 8000                           |
+| 8         | 2.5E-05       | 16000                          |
+| 16        | 2.3E-05       | 32000                          |
+| 32        | 2.6E-05       | 64000                          |
+| 64        | 2.7E-05       | 128000                         |
+| 128       | 2.57E-05      | 256000                         |
+| 256       | 2.5E-05       | 512000                         |
+| 512       | 2.9E-05       | 1024000                        |
+| 1024      | 3.3E-05       | 2048000                        |
+| 2048      | 4.0E-05       | 4096000                        |
+| 4096      | 5.8E-05       | 81920000                       |
 
 <img src="Part2_NB.png">
 
-*Outside of an outlier for the 32 byte message size, the non-blocking follows a similar pattern to the blocking code. generally, it is running slower than the blocking code by an order of magnitude. This could be due to the way that we explicity coded the wait MPI calls. The 32 byte outlier is not present in the blocking code, so it may be due to some outside interference when the test run was done.*
+*Compared to the nonblocking code, the blocking code has a very similar shape. There is a large decrease from the first size of bytes to the second, but the timing near the end of the non-blocking code is shorter than the initial start-up unlike the blocking code. The non-blocking code is also about a magnitude slower than the blocking code. This could be due to the way we coded our manual wait MPI calls. The other noticeable thing is that unlike the blocking code, the non-blocking code returns times that are all the same magnitude of e-5. This could be due to a limitation of our code not allowing any of the processes to run faster than this magnitude of time even if the actual calculation takes less than this time.*
 
 
 ## Part 3: MPI Ring Shift

@@ -203,7 +203,7 @@ There is an odd outlier at 32 bytes in the data run where we tested non-block co
 
 4. Analyze and discuss your results. Explain the behavior of the resulting curves.
 
-<p style="color:red;"> we need a written explanation here </p>
+<p style="color:red;"> See from the above two figures, 4 bytes experiment is the least efficient, and there's overall an increase in efficiency when the message size increases. Also, when there's an increase in latency, there's a decrease in bandwidth, when there's a decrease in latency, there's an increase in bandwidth. If the latency is larger and the bandwidth is smaller, this means at least around that small range of message size, the operation time is not sensitively effected by the change of message size. And if the latency is smaller and bandwidth larger, the argument is opposite. This shows that the message size doesn't solely or monotonically influence the operation time. There are many other factors. One possible factor is cache size, as the message size increases, there may be cache miss that cause longer access time. </p>
 
 
 ## Part 4: Non-blocking MPI Ring Shift

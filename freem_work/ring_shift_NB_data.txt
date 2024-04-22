@@ -1,0 +1,123 @@
+Lmod Warning: Input module (gcc) not found, using module: GCC . . . (ICER v.) 
+
+
+Lmod Warning: Input module (openmpi) not found, using module: OpenMPI . . .
+(ICER v.) 
+
+
+Lmod Warning: Input module (hdf5) not found, using module: HDF5 . . . (ICER
+v.) 
+
+
+Lmod Warning: Input module (python) not found, using module: Python . . .
+(ICER v.) 
+
+
+Running ring shift with number of nodes:
+4
+data size:     4 bytes | Latency: 42.392872 µs | Bandwidth: 0.089984 Mbps
+data size:     8 bytes | Latency: 8.514151 µs | Bandwidth: 0.896084 Mbps
+data size:    16 bytes | Latency: 6.217510 µs | Bandwidth: 2.454164 Mbps
+data size:    32 bytes | Latency: 0.742264 µs | Bandwidth: 41.114178 Mbps
+data size:    64 bytes | Latency: 12.448989 µs | Bandwidth: 4.902820 Mbps
+data size:   128 bytes | Latency: 1.161359 µs | Bandwidth: 105.109864 Mbps
+data size:   256 bytes | Latency: 1.150183 µs | Bandwidth: 212.262348 Mbps
+data size:   512 bytes | Latency: 33.369288 µs | Bandwidth: 14.632654 Mbps
+data size:  1024 bytes | Latency: 2.932735 µs | Bandwidth: 332.986980 Mbps
+data size:  2048 bytes | Latency: 3.671274 µs | Bandwidth: 532.002029 Mbps
+data size:  4096 bytes | Latency: 33.326447 µs | Bandwidth: 117.211715 Mbps
+Running ring shift with number of nodes:
+8
+data size:     4 bytes | Latency: 69.734640 µs | Bandwidth: 0.054703 Mbps
+data size:     8 bytes | Latency: 57.866797 µs | Bandwidth: 0.131844 Mbps
+data size:    16 bytes | Latency: 6.451271 µs | Bandwidth: 2.365237 Mbps
+data size:    32 bytes | Latency: 0.905246 µs | Bandwidth: 33.711934 Mbps
+data size:    64 bytes | Latency: 0.672415 µs | Bandwidth: 90.770083 Mbps
+data size:   128 bytes | Latency: 0.977889 µs | Bandwidth: 124.830476 Mbps
+data size:   256 bytes | Latency: 1.233071 µs | Bandwidth: 197.993958 Mbps
+data size:   512 bytes | Latency: 14.159828 µs | Bandwidth: 34.483557 Mbps
+data size:  1024 bytes | Latency: 6.582588 µs | Bandwidth: 148.355405 Mbps
+data size:  2048 bytes | Latency: 5.831011 µs | Bandwidth: 334.954800 Mbps
+data size:  4096 bytes | Latency: 34.303404 µs | Bandwidth: 113.873537 Mbps
+Running ring shift with number of nodes:
+16
+data size:     4 bytes | Latency: 46.058558 µs | Bandwidth: 0.082823 Mbps
+data size:     8 bytes | Latency: 63.093379 µs | Bandwidth: 0.120922 Mbps
+data size:    16 bytes | Latency: 6.399117 µs | Bandwidth: 2.384515 Mbps
+data size:    32 bytes | Latency: 0.875443 µs | Bandwidth: 34.859574 Mbps
+data size:    64 bytes | Latency: 1.013279 µs | Bandwidth: 60.235294 Mbps
+data size:   128 bytes | Latency: 1.176260 µs | Bandwidth: 103.778306 Mbps
+data size:   256 bytes | Latency: 1.352280 µs | Bandwidth: 180.539945 Mbps
+data size:   512 bytes | Latency: 15.080906 µs | Bandwidth: 32.377447 Mbps
+data size:  1024 bytes | Latency: 3.240071 µs | Bandwidth: 301.401552 Mbps
+data size:  2048 bytes | Latency: 7.817522 µs | Bandwidth: 249.839409 Mbps
+data size:  4096 bytes | Latency: 33.793971 µs | Bandwidth: 115.590145 Mbps
+Running ring shift with number of nodes:
+32
+data size:     4 bytes | Latency: 20405.001938 µs | Bandwidth: 0.000187 Mbps
+data size:     8 bytes | Latency: 17.227605 µs | Bandwidth: 0.442859 Mbps
+data size:    16 bytes | Latency: 7.042661 µs | Bandwidth: 2.166623 Mbps
+data size:    32 bytes | Latency: 0.950880 µs | Bandwidth: 32.094025 Mbps
+data size:    64 bytes | Latency: 224.585645 µs | Bandwidth: 0.271768 Mbps
+data size:   128 bytes | Latency: 204.731710 µs | Bandwidth: 0.596245 Mbps
+data size:   256 bytes | Latency: 1.773238 µs | Bandwidth: 137.680672 Mbps
+data size:   512 bytes | Latency: 19.636936 µs | Bandwidth: 24.865449 Mbps
+data size:  1024 bytes | Latency: 18.770806 µs | Bandwidth: 52.025602 Mbps
+data size:  2048 bytes | Latency: 8.298084 µs | Bandwidth: 235.370595 Mbps
+data size:  4096 bytes | Latency: 35.909936 µs | Bandwidth: 108.779086 Mbps
+Running ring shift with number of nodes:
+64
+data size:     4 bytes | Latency: 20418.747328 µs | Bandwidth: 0.000187 Mbps
+data size:     8 bytes | Latency: 17.964281 µs | Bandwidth: 0.424698 Mbps
+data size:    16 bytes | Latency: 7.302500 µs | Bandwidth: 2.089529 Mbps
+data size:    32 bytes | Latency: 76.846220 µs | Bandwidth: 0.397125 Mbps
+data size:    64 bytes | Latency: 105.908141 µs | Bandwidth: 0.576303 Mbps
+data size:   128 bytes | Latency: 58.586709 µs | Bandwidth: 2.083584 Mbps
+data size:   256 bytes | Latency: 5187.694915 µs | Bandwidth: 0.047061 Mbps
+data size:   512 bytes | Latency: 82.251616 µs | Bandwidth: 5.936434 Mbps
+data size:  1024 bytes | Latency: 129.413791 µs | Bandwidth: 7.546047 Mbps
+data size:  2048 bytes | Latency: 16.625039 µs | Bandwidth: 117.480925 Mbps
+data size:  4096 bytes | Latency: 34.897588 µs | Bandwidth: 111.934669 Mbps
+Running ring shift with number of nodes:
+128
+data size:     4 bytes | Latency: 20394.644700 µs | Bandwidth: 0.000187 Mbps
+data size:     8 bytes | Latency: 57.507306 µs | Bandwidth: 0.132668 Mbps
+data size:    16 bytes | Latency: 6.439164 µs | Bandwidth: 2.369685 Mbps
+data size:    32 bytes | Latency: 0.759959 µs | Bandwidth: 40.156863 Mbps
+data size:    64 bytes | Latency: 1.073815 µs | Bandwidth: 56.839549 Mbps
+data size:   128 bytes | Latency: 0.964850 µs | Bandwidth: 126.517375 Mbps
+data size:   256 bytes | Latency: 1.394190 µs | Bandwidth: 175.112892 Mbps
+data size:   512 bytes | Latency: 19.690022 µs | Bandwidth: 24.798411 Mbps
+data size:  1024 bytes | Latency: 13.124198 µs | Bandwidth: 74.409310 Mbps
+data size:  2048 bytes | Latency: 20.960346 µs | Bandwidth: 93.181907 Mbps
+data size:  4096 bytes | Latency: 62.001869 µs | Bandwidth: 63.002133 Mbps
+JobId=32463799 JobName=pingpong
+   UserId=freem386(6187794) GroupId=pa(2003) MCS_label=N/A
+   Priority=72782 Nice=0 Account=general QOS=freem386
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:08 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2024-03-12T16:47:42 EligibleTime=2024-03-12T16:47:42
+   AccrueTime=2024-03-12T16:47:42
+   StartTime=2024-03-12T16:47:45 EndTime=2024-03-12T16:57:45 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-03-12T16:47:45 Scheduler=Main
+   Partition=general-short AllocNode:Sid=dev-intel18:23172
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=lac-[033,035-037,073-077]
+   BatchHost=lac-033
+   NumNodes=9 NumCPUs=128 NumTasks=128 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=128,mem=2G,node=1,billing=311
+   AllocTRES=cpu=128,mem=18G,node=9,billing=2801
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=2G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18|(amr|acm)|nvf|nal|nif] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/freem_slurm_rs_NB.sb
+   WorkDir=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work
+   Comment=stdout=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32463799.out 
+   StdErr=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32463799.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-241/freem386/project-3-mpi-p2p-seven-c-s/freem_work/slurm-32463799.out
+   Power=
+   
+

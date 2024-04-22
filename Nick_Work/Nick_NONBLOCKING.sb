@@ -1,0 +1,19 @@
+#!/bin/bash
+########## Define Resources Needed with SBATCH Lines ##########
+#SBATCH --time=00:05:00             # limit of wall clock time - how long the job will run (same as -t)
+#SBATCH --nodes=2                  # number of tasks - how many tasks (nodes) that you require (same as -n)
+#SBATCH --nodelist=lac-[224-225,228-248,278-285,294-301]
+#SBATCH --cpus-per-task=2           # number of CPUs (or cores) per task (same as -c)
+#SBATCH --mem=2G                    # memory required per node - amount of memory (in bytes)
+#SBATCH --job-name=pingpong     # you can give your job a name for easier identification (same as -J) 
+
+
+# THIS FILE IS FOR MULTIPLE NODES
+ 
+########## Command Lines to Run ##########
+
+for bytes in 2 4 8 16 32 64 128 256 512 1024 2048 4096
+do 
+    mpiexec -n 2 ./Nick_NB.exe $bytes 
+done
+scontrol show job $SLURM_JOB_ID     ### write job information to output file
